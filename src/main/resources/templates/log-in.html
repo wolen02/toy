@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="wrap">
+
+        <header class="d-flex justify-content-center mt-4">
+
+            <h3>로그인</h3>
+
+        </header>
+
+        <section class="bg-warning d-flex justify-content-center">
+
+            <div id="logInBox" class="align-self-center card d-flex justify-content-center">
+
+                <div class="d-flex justify-content-center">
+                    <input type="text" id="logInId" class="form-control mx-2"></input>
+                    <input type="password" id="logInPass" class="form-control mx-2">
+                    <button id="logInBtn" class="btn btn-primary mx-2">로그인</button>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+        <footer class="text-center">
+
+            <div class="text-info">copyright By wolen02</div>
+
+        </footer>
+
+    </div>
+<script>
+
+    $(document).ready(function(){
+
+        $("#logInBtn").on("click", function(){
+            location.href = "http://localhost:8080/wak.png"
+        });
+
+    });
+
+</script>
+</body>
+</html>

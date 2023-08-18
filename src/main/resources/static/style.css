@@ -1,0 +1,29 @@
+#wrap{
+    margin:auto;
+    width:1200px;
+}
+
+header{
+    height:50px;
+}
+
+section{
+    height:700px;
+}
+
+#logInBox{
+    width:500px;
+    height:500px;
+}
+
+#logInId{
+    width:100px;
+}
+
+#logInPass{
+    width:100px;
+}
+
+footer{
+    height:50px;
+}
