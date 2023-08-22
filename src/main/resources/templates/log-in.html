@@ -21,9 +21,13 @@
 
             <div id="logInBox" class="align-self-center card d-flex justify-content-center">
 
-                <div class="d-flex justify-content-center">
-                    <input type="text" id="logInId" class="form-control mx-2"></input>
-                    <input type="password" id="logInPass" class="form-control mx-2">
+                <div class="d-flex justify-content-center bg-info">
+
+                    <div id="leftBox" class="bg-danger">
+                        <input type="text" id="logInId" class="form-control mx-2 my-1"></input>
+                        <input type="password" id="logInPass" class="form-control mx-2 my-1">
+                    </div>
+
                     <button id="logInBtn" class="btn btn-primary mx-2">로그인</button>
                 </div>
 
@@ -32,6 +36,8 @@
             </div>
 
         </section>
+
+        <hr>
 
         <footer class="text-center">
 
@@ -45,7 +51,11 @@
     $(document).ready(function(){
 
         $("#logInBtn").on("click", function(){
-            location.href = "http://localhost:8080/wak.png"
+
+            var id = $("#logInId").val();
+
+            location.href = "http://localhost:8080/main" + "?loginId=\"" + id + "\"";
+
         });
 
     });
